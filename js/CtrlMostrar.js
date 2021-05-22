@@ -14,15 +14,12 @@ function procesa(){
   var nombre= forma["nombre"].value;
   var grupo= forma["grupo"].value;
   var materia= forma["materia"].value;
-  var fecha= new Date(forma["fecha"].value);
-  var diaSeparado=fecha.getDate()+1,
-  mesSeparado=[fecha.getMonth()+1], 
-  anoSeparado= fecha.getFullYear();
-
+  var fecha= forma["fecha"].value;
+  
   salidaBoleta.textContent ="La boleta es:  "+boleta;
   salidaNombre.textContent ="El nombre es:  "+nombre;
   salidaGrupo.textContent ="El grupo es:  "+grupo;
   salidaMateria.textContent ="La materia es:  "+materia;
-  salidaFecha.textContent=`La fecha es:${diaSeparado}/${mesSeparado}/${anoSeparado}`; 
+  salidaFecha.textContent=`La fecha es:${fecha}`; 
 }
 
